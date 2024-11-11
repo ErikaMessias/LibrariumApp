@@ -1,0 +1,130 @@
+.devolucao-container {
+    width: 375px;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: #fdf8f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+  }
+  
+  .menu-superior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5b3e31;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 20px;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    flex-grow: 1;
+    text-align: center;
+  }
+  
+  .menu-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .menu-dropdown {
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    background-color: #5b3e31;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    width: 90%;
+    max-width: 300px;
+  }
+  
+  .menu-dropdown a {
+    display: block;
+    color: white;
+    padding: 5px 0;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  .menu-dropdown a:hover {
+    text-decoration: underline;
+  }
+  
+  .main-content {
+    text-align: center;
+    flex-grow: 1;
+    padding-top: 40px;
+  }
+  
+  .main-content h1 {
+    font-size: 1.8rem;
+    margin: 0;
+  }
+  
+  .main-content > p {
+    color: #666;
+    font-size: 1.1rem;
+    margin-top: 20px;
+  }
+  
+  .dropdown-container {
+    margin-top: 30px;
+  }
+  
+  .dropdown-container label {
+    font-size: 1.2rem;
+    color: #5b3e31;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  select {
+    width: 250px;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  select option {
+    color: #333;
+  }
+  
+  .livro-imagem-container {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .livro-imagem-devolucao {
+    max-width: 60%; 
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .devolver-button {
+    background-color: #5b3e31;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 30px;
+  }
+  
+  .devolver-button:hover {
+    background-color: #4b2d24;
+  }
+  

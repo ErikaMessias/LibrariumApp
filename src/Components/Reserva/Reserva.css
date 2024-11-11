@@ -1,0 +1,57 @@
+.form-reserva {
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  .form-reserva label {
+    display: block;
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .form-reserva input,
+  .form-reserva select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff; 
+    color: #333; 
+    margin-bottom: 15px;
+  }
+  
+  .form-reserva select {
+    color: #333; 
+    background-color: #f8f8f8; 
+  }
+  
+  .form-reserva select option {
+    color: #333; 
+    background-color: #fff; 
+  }
+  
+  .form-reserva select:focus {
+    outline: none;
+    border-color: #5b3e31; 
+  }
+  
+  .reserva-button {
+    background-color: #5b3e31;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .reserva-button:hover {
+    background-color: #4b2d24;
+  }
+  
+  .reserva-button:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+  }
+  

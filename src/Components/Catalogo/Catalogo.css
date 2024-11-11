@@ -1,0 +1,189 @@
+/* Container principal */
+.home-container {
+  width: 375px;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: #fdf8f4;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+}
+
+/* Menu superior */
+.menu-superior {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #5b3e31;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px 8px 0 0;
+  margin-bottom: 20px;
+}
+
+/* Logo centralizada */
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  flex-grow: 1;
+  text-align: center;
+}
+
+/* Menu Icon */
+.menu-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Dropdown do menu */
+.menu-dropdown {
+  position: absolute;
+  top: 50px;
+  right: 10px;
+  background-color: #5b3e31;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  width: 90%;
+  max-width: 300px;
+}
+
+.menu-dropdown a {
+  display: block;
+  color: white;
+  padding: 5px 0;
+  text-decoration: none;
+  text-align: center;
+}
+
+.menu-dropdown a:hover {
+  text-decoration: underline;
+}
+
+/* Conteúdo principal */
+.main-content {
+  text-align: center;
+  flex-grow: 1;
+  padding-top: 40px;
+}
+
+.main-content > h1 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.main-content > p {
+  color: #666;
+  font-size: 1.1rem;
+  margin-top: 20px;
+}
+
+/* Lista de livros */
+.livros-lista {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 0 10px; 
+}
+
+/* Item de livro */
+.livro-item {
+  background-color: #fff;
+  width: calc(50% - 10px); 
+  margin-bottom: 20px;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column; 
+  min-height: 350px; 
+  overflow: hidden; 
+  transition: opacity 0.3s ease; 
+}
+
+.livro-item.indisponivel {
+  opacity: 0.6; 
+  pointer-events: none; 
+}
+
+/* Imagem do livro */
+.livro-imagem {
+  width: 100%;
+  height: 200px; 
+  object-fit: cover; 
+  border-radius: 5px;
+}
+
+/* Linha de status (verde/vermelha) */
+.livro-status {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 100%;
+}
+
+.livro-status.disponivel {
+  background-color: #4caf50; 
+}
+
+.livro-status.indisponivel {
+  background-color: #f44336; 
+}
+
+/* Título do livro */
+.livro-item h3 {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* Autor do livro */
+.livro-item p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Descrição do livro (justificada) */
+.livro-descricao {
+  font-size: 0.8rem;
+  color: #999;
+  margin-top: 5px;
+  text-align: justify; 
+  margin-bottom: 10px; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+  white-space: nowrap; 
+  flex-grow: 1; 
+}
+
+/* Botão de reserva */
+.reserva-button {
+  background-color: #5b3e31;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  align-self: center; 
+  transition: background-color 0.3s ease; 
+  text-decoration: none; 
+  display: inline-block; 
+}
+
+.reserva-button:disabled {
+  background-color: #ccc; 
+  cursor: not-allowed; 
+}
+
+.reserva-button:hover:enabled {
+  background-color: #4b2d24; 
+}
